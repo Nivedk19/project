@@ -129,48 +129,11 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SubCategoriesController.cs" />
-    <Compile Include="Controllers\SubcategoryController.cs" />
+    <Compile Include="Controllers\**\*.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Feedback.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Feedback.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Feedback.cs">
-      <DependentUpon>Feedback.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Feedback.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Feedback.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Feedback1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Feedback.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\subcategory.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>subcategory.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SubCategory.cs">
-      <DependentUpon>subcategory.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\subcategory.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>subcategory.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\subcategory1.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>subcategory.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\**\*.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -182,42 +145,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\Feedback.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Feedback.edmx</DependentUpon>
-      <LastGenOutput>Feedback.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\Feedback.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Feedback.edmx</DependentUpon>
-      <LastGenOutput>Feedback1.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\subcategory.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>subcategory.edmx</DependentUpon>
-      <LastGenOutput>subcategory.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\subcategory.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>subcategory.edmx</DependentUpon>
-      <LastGenOutput>subcategory1.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\subcategory.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>subcategory.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\subcategory.edmx.diagram">
-      <DependentUpon>subcategory.edmx</DependentUpon>
-    </Content>
-    <EntityDeploy Include="Models\Feedback.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Feedback.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Feedback.edmx.diagram">
-      <DependentUpon>Feedback.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -243,15 +172,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\SubCategories\Create.cshtml" />
-    <Content Include="Views\SubCategories\Delete.cshtml" />
-    <Content Include="Views\SubCategories\Details.cshtml" />
-    <Content Include="Views\SubCategories\Edit.cshtml" />
-    <Content Include="Views\SubCategories\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Subcategory\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
